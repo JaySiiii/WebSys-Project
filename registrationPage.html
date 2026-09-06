@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <meta lang="en">
+    <meta charset="utf 8">
+    <head>
+        <title>The Box Cinema</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navigation_bar">
+                <a href="homePage.html">Home</a>
+                <a href="logInPage.html">Login</a>
+            </nav>
+        </header>
+        <main>
+            <form class="registration-box">
+                <div class="registration-box-inside">
+                    <h2>Register</h2>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="name" id="name" required placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" required placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="Password">Password</label>
+                        <input type="password" id="Password" required placeholder="Password">
+                    </div>
+                    <div>
+                        <label for="passwordconfirm">Confirm Password</label>
+                        <input type="password" id="passwordconfirm" required placeholder="Confirm Password">
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+                    <button type="submit">Sign up</button>
+                    <p id="login-link">
+                        Already have an account? <a href="logInPage.html">log in</a>
+                    </p>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>
+                &copy; 2026 TheBoxCinema. All righs reserved.
+            </p>
+        </footer>
+    </body>
+</html>

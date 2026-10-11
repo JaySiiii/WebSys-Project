@@ -12,6 +12,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body::before {
@@ -339,4 +340,71 @@ input[type="checkbox"] {
     margin-right: auto;
     text-align: left;
     font-size: 1.5rem;
+}
+
+.logo-link img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-link:hover img {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.landing-carousel {
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.carousel-slide {
+    background: rgba(0,36,57, 0.65);
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    scroll-behavior: smooth;
+    height: 300px;
+}
+
+.carousel-slide:img{
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.carousel-slide::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-slide::-webkit-scrollbar-thumb {
+    background: #78cce2;
+    border-radius: 4px;
+}   
+
+.carousel-slide::-webkit-scrollbar-thumb:hover {
+    background: #4e7988;
+} 
+
+.carousel-slide::-webkit-scrollbar-track {
+    background: rgba(0,80,102, 0.65);
+    border-radius: 4px;
+}
+
+
+
+#trending-title{
+    color: #78cce2;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(0,36,57, 0.65);
 }

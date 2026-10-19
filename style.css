@@ -31,6 +31,24 @@ body::before {
     z-index: -1;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #002439;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #e4eff0;
+    border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: #78cce2;
+}
+
+
 main {
     flex: 1;
     padding: 20px;
